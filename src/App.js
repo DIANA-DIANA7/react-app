@@ -1,23 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="weather-app">
+      <form className="search-form">
+        <input
+          type="text"
+          placeholder="Search city"
+          autocomplete="off"
+          id="search-bar"
+        />
+        <input type="submit" value="Go" className="search-btn" />
+        <button className="location-btn">Current Location</button>
+      </form>
+      <section className="current-weather">
+        <h1 id="searched-city">Seattle</h1>
+        <h2 id="date">monday, feb 10, 2022</h2>
+        <img
+          src=""
+          alt="weather icon"
+          className="current-weather-icon"
+          id="icon"
+        />
+        <span className="description" id="weather-description">
+          <br />
+          cloudy
+        </span>
+        <h3 id="currentTemperature">
+          10<small id="cel">C°</small>
+          <span>|</span>
+          <small id="fah">F°</small>
+        </h3>
+
+        <ul>
+          <li>
+            High: <span id="high"></span>°
+          </li>
+          <li>
+            Low: <span id="low"></span>°
+          </li>
+          <li>
+            Wind: <span id="wind"></span>km/h
+          </li>
+          <li>
+            Humidity: <span id="humid"></span>%
+          </li>
+        </ul>
+      </section>
     </div>
   );
 }
