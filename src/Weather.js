@@ -7,7 +7,7 @@ export default function Weather(props) {
       <h1 id="searched-city">{props.details.city}</h1>
       <h2>
         
-        <FormateDate date="wednesday" />
+        <FormateDate />
       </h2>
       <Icons code={props.details.icon}/>
 
