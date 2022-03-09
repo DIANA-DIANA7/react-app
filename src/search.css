@@ -53,3 +53,4 @@ list-style:none ;}
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+.description{text-transform: capitalize;}
