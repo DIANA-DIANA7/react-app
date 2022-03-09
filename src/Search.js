@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import "./search.css";
 export default function Search() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState({});
@@ -32,9 +32,10 @@ export default function Search() {
   let form = (
     <form className="search-form" onSubmit={handleSubmit}>
       <input
-        type="text"
+        type="search"
         placeholder="Search city"
         autoComplete="off"
+        autoFocus="on"
         id="search-bar"
         onChange={updateCity}
       />
