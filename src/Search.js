@@ -11,7 +11,7 @@ export default function Search(props) {
     setWeather({
       ready: true,
       city: response.data.name,
-      date: response.data.dt,
+      
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       high: response.data.main.temp_max,
