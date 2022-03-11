@@ -1,16 +1,19 @@
 
-h1{margin-bottom: 0;}
+h1{
+  margin-bottom:0;}
 h2{margin-top: 0;}
-.currentTemperature {
-  margin: 0;
-}
+
 ul{padding: 0;
 list-style:none ;}
+
+a{
+  color: lightblue
+}
 .search-form {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center;}
+
 #search-bar {
   border: none;
   outline: none;
@@ -32,6 +35,7 @@ list-style:none ;}
   outline: none;
   background: #7c7c7c2b;
   color: white;
+  font-family: inherit;
 }
 .search-btn:hover {
   background: #7c7c7c8b;
@@ -47,10 +51,14 @@ list-style:none ;}
   outline: none;
   background: #7c7c7c3b;
   color: white;
+  font-family: inherit;
 }
 .location-btn:hover {
   background: #7c7c7c8b;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+#time{font-size: 75%;}
 .description{text-transform: capitalize;}
+.currentTemp{font-size: 115%;}
+#git{color:blue;}

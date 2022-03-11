@@ -13,26 +13,26 @@ const[unit, setUnit]=useState("fahrenheit");
 if (unit === "fahrenheit" ){
     return (
       <div className="currentTemperature">
-        {Math.round(props.fahrenheit)}
-        <small id="fah"> F°</small>|
-        <small id="cel">
+        <span className="currentTemp">{Math.round(props.fahrenheit)}</span>
+        <span>
+          
+          F°|
           <a href="/" onClick={convertToCelsius}>
-            {" "}
             C°
           </a>
-        </small>
+        </span>
         <ul>
           <li>
-            High: <span id="high">{Math.round(props.high)}</span>°
+            High: <span>{Math.round(props.high)}</span>°
           </li>
           <li>
-            Low: <span id="low">{Math.round(props.low)}</span>°
+            Low: <span>{Math.round(props.low)}</span>°
           </li>
           <li>
-            Wind: <span id="wind">{Math.round(props.wind)}</span>mph
+            Wind: <span>{Math.round(props.wind)}</span>mph
           </li>
           <li>
-            Humidity: <span id="humid">{props.humid}</span>%
+            Humidity: <span>{props.humid}</span>%
           </li>
         </ul>
       </div>
@@ -46,25 +46,25 @@ if (unit === "fahrenheit" ){
     
     return (
       <div className="currentTemperature">
-        {Math.round(celsiusTemp)}
-        <small id="fah">
+        <span className="currentTemp">{Math.round(celsiusTemp)}</span>
+        <span>
           <a href="/" onClick={convertToFahrenheit}>
             F°
           </a>
-        </small>
-        |<small id="cel">C°</small>
+          |C°
+        </span>
         <ul>
           <li>
-            High: <span id="high">{Math.round(highTemp)}</span>°
+            High: <span>{Math.round(highTemp)}</span>°
           </li>
           <li>
-            Low: <span id="low">{Math.round(lowTemp)}</span>°
+            Low: <span>{Math.round(lowTemp)}</span>°
           </li>
           <li>
-            Wind: <span id="wind">{Math.round(windSpeed)}</span>km/h
+            Wind: <span>{Math.round(windSpeed)}</span>km/h
           </li>
           <li>
-            Humidity: <span id="humid">{props.humid}</span>%
+            Humidity: <span>{props.humid}</span>%
           </li>
         </ul>
       </div>

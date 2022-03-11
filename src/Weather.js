@@ -5,9 +5,9 @@ import CurrentTemperature from "./CurrentTemperature";
 export default function Weather(props) {
   return (
     <div>
-      <h1 id="searched-city">{props.details.city}</h1>
+      <h1>{props.details.city}</h1>
       <h2>
-        <FormatDate />
+        <FormatDate date={props.details.date} />
       </h2>
       <Icons code={props.details.icon} />
 

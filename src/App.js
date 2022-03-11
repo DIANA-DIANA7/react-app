@@ -9,7 +9,7 @@ function App() {
       <footer>
         Coded by Diana M. open-source on{" "}
         <span>
-          <a href="https://github.com/DIANA-DIANA7/react-app" rel="noopener">
+          <a href="https://github.com/DIANA-DIANA7/react-app" target="_blank" id="git">
             Github
           </a>
         </span>{" "}

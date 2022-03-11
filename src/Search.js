@@ -11,7 +11,7 @@ export default function Search(props) {
     setWeather({
       ready: true,
       city: response.data.name,
-      
+      date: new Date(response.data.dt*1000),
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       high: response.data.main.temp_max,
@@ -40,13 +40,13 @@ export default function Search(props) {
         <form className="search-form" onSubmit={handleSubmit}>
           <input
             type="search"
-            placeholder="Search city"
+            placeholder="Enter a city"
             autoComplete="off"
             autoFocus="on"
             id="search-bar"
             onChange={updateCity}
           />
-          <input type="submit" value="Go" className="search-btn" />
+          <input type="submit" value="Search" className="search-btn" />
           <button className="location-btn">Current Location</button>
         </form>
         <Weather details={weather} />
