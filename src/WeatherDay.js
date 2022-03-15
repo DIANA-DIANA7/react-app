@@ -1,5 +1,6 @@
 import React from "react";
 import Icons from "./Icons";
+import"./WeatherDay";
 export default function WeatherDay(props){
 function maxTemp(){
     let highTemp = Math.round(props.data.temp.max);

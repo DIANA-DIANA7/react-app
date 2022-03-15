@@ -50,10 +50,13 @@ export default function Search(props) {
             onChange={updateCity}
           />
           <input type="submit" value="Search" className="search-btn" />
-          <button className="location-btn">Current Location</button>
         </form>
-         <Weather details={weather} />
-         <WeatherForecast coord={weather.coord}/>
+        <div className="allWeather">
+          <Weather details={weather} />
+          <div className="forecast">
+            <WeatherForecast coord={weather.coord} />
+          </div>
+        </div>
       </div>
     );
   } else {
