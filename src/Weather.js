@@ -9,7 +9,7 @@ export default function Weather(props) {
       <h2>
         <FormatDate date={props.details.date} />
       </h2>
-      <Icons code={props.details.icon} />
+      <Icons code={props.details.icon} size={90} />
 
       <span className="description" id="weather-description">
         <br />

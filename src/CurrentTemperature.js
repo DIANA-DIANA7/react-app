@@ -7,6 +7,7 @@ const[unit, setUnit]=useState("fahrenheit");
     setUnit("celsius");
     }
   function convertToFahrenheit(event){
+    
       event.preventDefault();
       setUnit("fahrenheit");
   }
@@ -15,7 +16,6 @@ if (unit === "fahrenheit" ){
       <div className="currentTemperature">
         <span className="currentTemp">{Math.round(props.fahrenheit)}</span>
         <span>
-          
           F°|
           <a href="/" onClick={convertToCelsius}>
             C°
@@ -30,6 +30,7 @@ if (unit === "fahrenheit" ){
           </li>
           <li>
             Wind: <span>{Math.round(props.wind)}</span>mph
+           
           </li>
           <li>
             Humidity: <span>{props.humid}</span>%
