@@ -12,7 +12,7 @@ function lowTemp() {
 function day(){
     let date=new Date(props.data.dt*1000);
     let day=date.getDay();
-    let days=["Sun", "Mon","Tue", "Wed", "Thur", "Fri", "Sat"];
+    let days=["Sun", "Mon","Tue", "Wed", "Thu", "Fri", "Sat"];
     return days[day];
 }
     return (
@@ -20,8 +20,8 @@ function day(){
         <ul>
           <li>
             {day()}{" "}
-            <span className="tempHigh">{maxTemp()}</span>
-            <span className="tempLow">{lowTemp()}</span>
+            <span className="tempHigh">{maxTemp()}</span>|
+            <span className="tempLow">{lowTemp()}</span>{" "}
             <Icons code={props.data.weather[0].icon} size={30} />
           </li>
         </ul>
