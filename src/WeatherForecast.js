@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useState, useEffect, } from "react";
-import Icons from "./Icons";
 import "./WeatherForecast.css";
 import WeatherDay from "./WeatherDay";
 
