@@ -1,3 +1,22 @@
-.tempLow{
+
+
+.Forecast ul{
+display: flex;
+justify-content:space-between;}
+
+.Forecast li{
+ display: flex;
+ align-items: flex-end;
+
+}
+
+.Forecast .day {
+color: white;}
+.tempHigh{
     opacity: 0.8;
+  
+}
+.tempLow{
+    opacity: 0.6;
+    
 }

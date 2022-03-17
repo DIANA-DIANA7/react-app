@@ -1,6 +1,7 @@
 import React from "react";
 import Icons from "./Icons";
-import"./WeatherDay";
+import"./WeatherDay.css";
+
 export default function WeatherDay(props){
 function maxTemp(){
     let highTemp = Math.round(props.data.temp.max);
@@ -20,10 +21,17 @@ function day(){
       <div className="Forecast">
         <ul>
           <li>
-            {day()}{" "}
-            <span className="tempHigh">{maxTemp()}</span>|
-            <span className="tempLow">{lowTemp()}</span>{" "}
-            <Icons code={props.data.weather[0].icon} size={30} />
+            <span className="day">{day()}</span>
+          </li>
+          <li>
+           <span className="tempHigh">{maxTemp()}</span>
+           |
+            <span className="tempLow">{lowTemp()}</span>
+          </li>
+          <li>
+            <span className="icons">
+              <Icons code={props.data.weather[0].icon} size={30} />
+            </span>
           </li>
         </ul>
       </div>

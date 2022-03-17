@@ -1,11 +1,16 @@
 
 h1{
   margin-bottom:0;}
-h2{margin-top: 0;}
+h2{
+
+  margin-top: 0;}
 
 ul{padding: 0;
-list-style:none ;}
-
+list-style:none ;
+}
+li{
+  line-height:1.7 ;
+}
 a{
   color: lightblue
 }
@@ -44,9 +49,10 @@ a{
 }
 .allWeather{
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
 }
 .forecast{align-self: flex-end;}
+
 #time{font-size: 75%;}
 .description{text-transform: capitalize;}
 .currentTemp{font-size: 115%;}
